@@ -1,0 +1,4 @@
+selenium
+certifi
+beautifulsoup4
+pandas

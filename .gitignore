@@ -1,6 +1,7 @@
 # Data and models
 backend/data/
 backend/models/
+scraper/data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
