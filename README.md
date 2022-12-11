@@ -1,4 +1,4 @@
-# political_bots_mvp
+# political_bots_mvp (AKA PolitiBot)
 As part of the AssemblyAI Hackathon 2022, this project will serve as an MVP for "political bots" where you can talk directly to the AI form of Joe Biden and Donald Trump! This application also comes with an "explainability" option to showcase why the model chose to respond in the way it did - this can also be used to reference what the politician said previously about a given subject.
 
 ## Try It Out
