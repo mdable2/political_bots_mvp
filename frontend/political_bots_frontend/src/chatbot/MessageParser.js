@@ -28,11 +28,6 @@ class MessageParser {
       }
       else { // talking to trump in this block
         console.log("talking to trump");
-        const m = {
-          "to": "trump",
-          "msg": message
-        }
-        this.actionProvider.props.props.changeQueryText(JSON.stringify(m));
         const requestOptions = {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -43,6 +38,12 @@ class MessageParser {
         const data = await response.json()
         const msg = this.actionProvider.createChatBotMessage(data.response);
         this.actionProvider.updateChatbotState(msg, "trump");
+        const m = {
+          "to": "trump",
+          "msg": message,
+          "explain": data.explainability
+        }
+        this.actionProvider.props.props.changeQueryText(JSON.stringify(m));
       }
     }
   }
