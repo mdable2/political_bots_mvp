@@ -41,3 +41,5 @@ python train.py --model_name_or_path C:\Users\Mark\Code\political_bots\GODEL\mod
 * **[12/11/22 5:10AM]** In the final stretch. It is going to be close if I finish everything on time! But here we go.
 
 * **[12/11/22 6:39AM]** MVP coding is complete...for now. Going to try and get this on AWS.
+
+* **[12/11/22 12:23PM]** Ended up getting on GCP due to not having enough vCPUs on AWS. Made video and presentation. Going to test one more time.
