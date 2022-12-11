@@ -8,12 +8,18 @@ services:
       - PYTHONIOENCODING=UTF-8
     ports:
       - "8000:8000"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
   client:
     build: ./frontend
     environment:
       CHOKIDAR_USEPOLLING: "true"
     volumes:
-      - /app/node_modules
       - C:\Users\Mark\Code\political_bots_mvp\frontend\political_bots_frontend\:/app
     image: frontend
     ports:

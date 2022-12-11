@@ -7,4 +7,4 @@ RUN pip3 install --upgrade pip && \
 
 ADD . .
 
-ENTRYPOINT ["gunicorn", "server:app", "--workers", "3", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--log-level", "info"]
+ENTRYPOINT ["gunicorn", "server:app", "--workers", "3", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--log-level", "info", "--timeout", "0"]

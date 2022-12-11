@@ -21,3 +21,23 @@ python train.py --model_name_or_path C:\Users\Mark\Code\political_bots\GODEL\mod
 * **[12/9/22 7:19PM]** Seems to be in the right format now. Going to try to kick off training.
 
 * **[12/9/22 7:26PM]** Ok, we are training first bot. Should take 13 more hours it looks like to get through 10 epochs. 
+
+* **[12/9/22 9:47PM]** Finally figured out a CORS issue. Frontend and backend now communicate. Time to make frontend components.
+
+* **[12/10/22 7:42AM]** Stopped training of first bot and starting second training.
+
+* **[12/10/22 8:41AM]** Figured out how to calculate sentence/paragraph similarity for explanability.
+
+* **[12/10/22 1:10PM]** Going to start working on completing backend first.
+
+* **[12/10/22 6:10PM]** Backend seems to be good. Now doing frontend. Getting compile errors.
+
+* **[12/10/22 8:48PM]** Frontend...I can't get components to communicate with each other how I want so...now I think I'm going to implement redux. Yikes. Also I stopped all model training. Not as good as I want but with time constraints I'll take it.
+
+* **[12/10/22 9:44PM]** Finally have basic redux set up. Now going to try to add component to showcase "explainability".
+
+* **[12/10/22 11:51PM]** Ran into lots of issues getting global state working. Now it works so...now I'm going to add that component. Hoping to get this on AWS tonight. Need to hook up the backend now to the frontend as well.
+
+* **[12/11/22 5:10AM]** In the final stretch. It is going to be close if I finish everything on time! But here we go.
+
+* **[12/11/22 6:39AM]** MVP coding is complete...for now. Going to try and get this on AWS.

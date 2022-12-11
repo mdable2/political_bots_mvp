@@ -2,7 +2,8 @@
 FROM node:16-alpine as build-step
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
-COPY ./political_bots_frontend/package.json ./political_bots_frontend/package-lock.json ./
+COPY ./political_bots_frontend/package.json ./
+COPY ./political_bots_frontend/package-lock.json ./
 COPY ./political_bots_frontend/src ./src
 COPY ./political_bots_frontend/public ./public
 RUN npm install

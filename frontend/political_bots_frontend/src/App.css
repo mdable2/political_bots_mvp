@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-items {
+  font-size: small;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
