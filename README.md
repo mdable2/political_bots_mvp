@@ -1,6 +1,18 @@
 # political_bots_mvp
 As part of the AssemblyAI Hackathon 2022, this project will serve as an MVP for "political bots" where you can talk directly to the AI form of Joe Biden and Donald Trump! This application also comes with an "explainability" option to showcase why the model chose to respond in the way it did - this can also be used to reference what the politician said previously about a given subject.
 
+## Try It Out
+`http://34.136.52.112:3000/`
+
+## Tech Specs
+* Created models using PyTorch and `GODEL`
+* Created sentence embeddings using transformers and contextual embeddings
+* Vector space searching done through `SentenceTransformer`
+* Webscraping written with `beautifulsoup` and `selenium`
+* Backend uses `FastAPI` and runs using `Gunicorn`
+* Frontend built with `React` and had to set up `Redux` structure
+* Deployment is containerized with Docker and utilizes Docker-Compose
+
 ## Training Commands
 
 * Note: I have a gaming laptop 3080 so I can't load more into vRAM :( && timing constraints means I'll do less epochs
